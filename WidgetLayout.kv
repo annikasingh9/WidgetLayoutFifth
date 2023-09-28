@@ -3,54 +3,57 @@ LayoutAssignment
 
 <LayoutAssignment>:
     orientation: "vertical"
-    padding: "20dp"
 
-    Label:
-        text: "Layout Assignment"
+    padding: "15dp"
+    spacing: "15dp"
+    Button:
+
+        orientation: "vertical"
+        text: "Kivy Layout (Label)"
         background_color: "green"
-        size_hint: 1, .1
+        size_hint: 1, .2
         pos_hint: {"x":0}
     BoxLayout:
         spacing: "15dp"
-        padding: "15dp"
+
         background_color: 1, 255, 192, 203
         Button:
 
             background_color: "pink"
             text: "Button A"
-            size_hint: .1, .8
-            pos: "0dp","0dp"
+            size_hint: .1, 1
+
 
 
         Button:
             background_color: "pink"
             text: "Button B"
-            size_hint: .1, .8
+            size_hint: .1, 1
 
         BoxLayout:
             spacing: "15dp"
             text: "Replace Me With Another Layout"
-            size_hint: .5, .8
+            size_hint: .5, 1
             orientation: "vertical"
             Button:
                 text: "Button C"
                 background_color: 255,1,1,1
-                size_hint: 1,.8
+                size_hint: 1,1
                 # horizontal positions: "x"(left), "center_x", "right"
                 #vertical positions: "y"(bottom)
 
             Button:
                 text: "Button D"
                 background_color: 255,1,1,1
-                size_hint: 1,.8
+                size_hint: 1,1
             Button:
                 text: "Button D"
                 background_color: 255,1,1,1
-                size_hint: 1,.8
+                size_hint: 1,1
         GridLayout:
             background_color: "blue"
             spacing: "15dp"
-            size_hint: .5,.8
+            size_hint: .5,1
             rows: 6
             Button:
                 background_color: "blue"
