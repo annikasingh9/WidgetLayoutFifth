@@ -1,22 +1,150 @@
-BoxLayoutExample
+LayoutAssignment
 
-<BoxLayoutExample>:
-    orientation: "horizontal"
-    Button:
-        text: "Button A"
-        background_color: 255,1,1,1
-        size_hint: .5,1
-    Button:
-        text: "Button B"
-        background_color: 0,255,0,1
-    Button:
-        text: "Button C"
-        background_color: 0,0,255,1
-        size_hint: 1,.5
-        # horizonal positions: "x"(left), "center_x", "right"
-        # vertical positions: "y"(bottom)
 
-<MainWidget>
+<LayoutAssignment>:
+    orientation: "vertical"
+    padding: "20dp"
+
+    Label:
+        text: "Layout Assignment"
+        background_color: "green"
+        size_hint: 1, .1
+        pos_hint: {"x":0}
+    BoxLayout:
+        spacing: "15dp"
+        padding: "15dp"
+        background_color: 1, 255, 192, 203
+        Button:
+
+            background_color: "pink"
+            text: "Button A"
+            size_hint: .1, .8
+            pos: "0dp","0dp"
+
+
+        Button:
+            background_color: "pink"
+            text: "Button B"
+            size_hint: .1, .8
+
+        BoxLayout:
+            spacing: "15dp"
+            text: "Replace Me With Another Layout"
+            size_hint: .5, .8
+            orientation: "vertical"
+            Button:
+                text: "Button C"
+                background_color: 255,1,1,1
+                size_hint: 1,.8
+                # horizontal positions: "x"(left), "center_x", "right"
+                #vertical positions: "y"(bottom)
+
+            Button:
+                text: "Button D"
+                background_color: 255,1,1,1
+                size_hint: 1,.8
+            Button:
+                text: "Button D"
+                background_color: 255,1,1,1
+                size_hint: 1,.8
+        GridLayout:
+            background_color: "blue"
+            spacing: "15dp"
+            size_hint: .5,.8
+            rows: 6
+            Button:
+                background_color: "blue"
+                text: "1"
+            Button:
+                background_color: "blue"
+                text: "2"
+            Button:
+                background_color: "blue"
+                text: "3"
+            Button:
+                background_color: "blue"
+                text: "4"
+            Button:
+                background_color: "blue"
+                text: "5"
+            Button:
+                background_color: "blue"
+                text: "6"
+            Button:
+                background_color: "blue"
+                text: "7"
+            Button:
+                background_color: "blue"
+                text: "8"
+            Button:
+                background_color: "blue"
+                text: "9"
+            Button:
+                background_color: "blue"
+                text: "10"
+            Button:
+                background_color: "blue"
+                text: "11"
+            Button:
+                background_color: "blue"
+                text: "12"
+            Button:
+                background_color: "blue"
+                text: "13"
+            Button:
+                background_color: "blue"
+                text: "14"
+            Button:
+                background_color: "blue"
+                text: "15"
+            Button:
+                background_color: "blue"
+                text: "16"
+            Button:
+                background_color: "blue"
+                text: "17"
+            Button:
+                background_color: "blue"
+                text: "18"
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
+<GridLayoutExample>:
+    rows: 2
+    Button:
+        text: "A"
+#    Button:
+        text: "A"
+#    Button:
+        text: "A"
+#    Button:
+        text: "A"
+
+#<StackLayoutExample>:
+#    orientation: "lr-tb"
+#    spacing: "20dp"
+    
+#    Button:
+#       text: "Button A"
+#        background_color: 255,1,1,1
+#        size_hint: .5,1
+        # horizontal positions: "x"(left), "center_x", "right"
+#       # vertical positions: "y"(bottom)
+#        pos_hint: {"x": .25}
+#    Button:
+#        text: "Button B"
+#        background_color: 0,255,0,1
+        size_hint: 1,1
+#    Button:
+#        text: "Button C"
+#        background_color: 0,0,255,1
+#        size_hint: 1,.5
+#        # horizonal positions: "x"(left), "center_x", "right"
+#        # vertical positions: "y"(bottom)
+
+# <MainWidget>
     Button:
         text: "Button A"
         size: "100dp","500dp"
